@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD</title>
+</head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #ffffff;
+  gap: 50px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  text-align: center;
+  width: 320px;
+  height: 700px;
+}
+img{width: 320px;
+  height: 180px;}
+span{font-size: larger;}
+.p1{ background-color: black;
+       color: white;
+       padding: 10px;
+       text-align: left;margin-top: 350px;
+    }
+    .p2{ background-color: black;
+       color: white;
+       padding: 10px;
+       text-align: left;margin-top: 138px;}
+
+</style>
+<body>
+
+<div class="grid-container">
+        <div class="grid-item"><span>A short heading </span><br><br>
+            <img src="aerostat balloon.jpg" alt="Balloon">
+            <div>The idea of reaching the north pole by means of ballons appears to have been entertanied many years ago.</div>
+            
+        </div>
+
+        <div class="grid-item"><span>A short heading</span> <br><br>
+          <img src="aerostat balloon.jpg" alt="Balloon">
+          <div>short content</div>    
+          <p class="p1">I have a footer!</p>
+        </div>
+
+
+        <div class="grid-item"><span>A longer heading in this card </span><br><br>
+          <img src="aerostat balloon.jpg" alt="Balloon">
+          <div>In a curious work,Puplished in Paris in 1863 by delaville Dedreux,There is a suggestion to reach North pole by an aerostat.</div>
+          <p class="p2">I have a footer!</p>
+        </div>  
+
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            flex-direction: row;
+            border: 2px dotted black;
+        }
+        .r_div {
+                background-color: red;
+                width: 25%;
+                margin: 10px;
+                text-align: left;
+                line-height: 75px;
+                font-size: 100px;
+            }
+        .S_div {
+            position: static;
+                background-color: green;
+                width: 25%;
+                margin: 10px;
+                text-align: left;
+                line-height: 75px;
+                font-size: 100px;
+            }
+            .RED_div {
+                position: relative;
+                background-color: green;
+                width: 25%;
+                margin: 10px;
+                text-align: left;
+                line-height: 75px;
+                font-size: 100px;
+                top:30px ;
+                right: -20px;
+            }
+            .A_div {
+                position: absolute;
+                background-color: green;
+                width: 25%;
+                margin: 10px;
+                text-align: left;
+                line-height: 75px;
+                font-size: 100px;
+                top:450px ;
+                right: 740px;
+            }
+    </style>
+</head>
+<body>
+    <h1>position : static</h1>
+    <div>
+        <span class="r_div">one</span>
+        <span class="S_div">two</span>
+        <span class="r_div">three</span>
+        <span class="r_div">four</span>
+    </div>
+    <h1>position : relative</h1>
+    <div>
+        <span class="r_div">one</span>
+        <span class="RED_div">two</span>
+        <span class="r_div">three</span>
+        <span class="r_div">four</span>
+    </div>
+    <h1>position : absolute</h1>
+    <div>
+        <span class="r_div">one</span>
+        <span class="A_div">two</span>
+        <span class="r_div">three</span>
+        <span class="r_div">four</span>
+    </div>
+
+</body>
+</html>
