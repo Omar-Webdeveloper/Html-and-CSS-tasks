@@ -11,19 +11,21 @@
       rel="stylesheet"
     />
     <style>
-      .playwrite-ie-guides-regular {
+      *{ border: 0;margin: 0;}
+      .body {
         font-family: "Playwrite IE Guides", serif;
-        font-weight: 400;
+        font-weight: 900;
         font-style: normal;
+        font-size: 2px;
       }
 
       .img-container {
         position: relative;
         text-align: center;
         color: white;
-        width: 1340px;
+        width: 1300px;
         height: 600px;
-        opacity: 90%;
+        opacity: 85%;
       }
       .centered1 {
         position: absolute;
@@ -34,58 +36,70 @@
       }
       .centered2 {
         position: absolute;
-        top: 33%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: black;
       }
       .centered3 {
         position: absolute;
-        color: black;
-
-        top: 50%;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        width: 100px;
+        height: 40px;
+        top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
       .Second-container {
         background-color: whitesmoke;
         color: black;
-
+        width: 1300px;
         text-align: center;
       }
-      .Thrid-container {
+      .Thrid-container {  border-radius: 25px;
+
+        width: 1300px;
         height: 1000px;
         color: black;
-        transition:width 2s;
-        background-color: rgb(65, 65, 65);
-        display: grid;
+        transition: width 2s;
+        background-color:rgb(88, 37, 8);
+        display: flex;
         grid-template-columns: auto auto auto;
         gap: 50px;
+        justify-content: center;
       }
-      .Thrid-container-cards {
-        padding-top: 30px;
-        border: 1px solid rgba(0, 0, 0, 0.8);
+      .Thrid-container-cards {  border-radius: 25px;
+
+        margin-top: 50px;
+        padding-top: 0px;
+        /* border: 10px solid (150deg,rgb(78, 78, 78),rgb(100, 100, 100),gray ); */
         font-size: 30px;
-        color: black;
-        transition:width 2s;
+        background-color: rgb(198, 204, 255);
+        transition: width 2s;
         text-align: center;
         width: 320px;
-        height: 700px;
-        transform: rotate(-5deg);
-
+        height: 760px;
+        justify-self: center;
+        /* align-content: center; */
       }
-      .Thrid-container-cards:hover{background-image: linear-gradient(white, gray);}
+      img{width: 320px;}
+      .Thrid-container-cards:hover {
+        height: 761px;
+        background-image: linear-gradient(white, gray);
+        /* transform: rotate(-1deg); */
+      }
       .Fourth-container {
         background-color: whitesmoke;
+        width: 1300px;
         text-align: center;
         color: black;
       }
       .fifth-container {
         display: flex;
         height: 184px;
-        width: 1500px;
+        width: 1300px;
         color: black;
-
         color: antiquewhite;
       }
       .CH_div1 {
@@ -93,31 +107,40 @@
         height: 200px;
         width: 660px;
         color: black;
-
+        text-align: center;
         font-size: 30px;
       }
       .CH_div2 {
         background-color: gainsboro;
         height: 200px;
         color: black;
-
+        text-align: center;
         width: 660px;
         font-size: 30px;
       }
       .summary {
         width: 1300px;
-        height: 100px;
-        transition:hidth 3s;
+        height: 50px;
+        transition: hidth 3s;
       }
-      .summary:hover{        background-image: linear-gradient(to right,white,whitesmoke,wheat,gray);
+      .summary:hover {
+        background-image: linear-gradient(
+          to right,
+          white,
+          whitesmoke,
+          wheat,
+          gray
+        );
       }
+      span{font-size: 40px;}
+      img{height: 260px;}
     </style>
   </head>
   <body>
     <div class="img-container">
       <img src="support.jpg" alt="IT Customer Support" class="img-container" />
-      <h1 class="centered1">Welcome to responsive Website</h1>
-      <p class="centered2">
+      <h1 class="centered1" style="font-size: 60px;">Welcome to responsive Website</h1>
+      <p class="centered2" style="font-size: 30px;">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
         laboriosam qui, accusantium rerum dignissimos possimus ad? Sequi veniam
         illo nisi quam qui quaerat tempore nam. Quos ex nam iusto architecto!
@@ -149,7 +172,7 @@
 
       <div class="Thrid-container-cards">
         <img src="comp4.jpg" alt="computer" /><br /><br />
-        <span>same  expensive everywhere? </span>
+        <span>same expensive everywhere? </span>
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
           officiis placeat. Necessitatibus voluptates ducimus quis delectus iste
@@ -159,7 +182,6 @@
       </div>
 
       <div class="Thrid-container-cards">
-       
         <img src="comp4.jpg" alt="computer" /><br /><br />
         <span>improve your accessbility </span>
         <div>
@@ -186,22 +208,24 @@
         Contact Us
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          aspernatur voluptate quia voluptatem corrupti explicabo,
+          aspernatur voluptate quia voluptatem corrupti explicabo,<br />
+          <a href="#">info@responsive.com</a>
         </p>
       </div>
       <div class="CH_div2">
         About Us
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui optio
-          maiores debitis ut sequi modi quidem sint pariatur doloremque?
+          maiores debitis ut sequi modi quidem sint pariatur doloremque?<br />
+          <a href="#">www.responsive.com</a>
         </p>
       </div>
-    </div>
+    </div><br>
     <div class="summary">
       <p>
         Lorem ipsum,<br /><a href="#"
-          >dolor sit amet consectetur adipisicing elit.</a
-        >
+          >dolor sit amet consectetur adipisicing elit.
+        </a>
       </p>
     </div>
   </body>
